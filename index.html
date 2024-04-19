@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stwaayl.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Data Entry</h2>
+        <div class="my-3">
+            <label for="ProductName">Product Name </label>
+            <input type="text" class="form-control" id="ProductName">
+            <label for="ProductPrice">Product Price </label>
+            <input type="text" class="form-control" id="ProductPrice">
+            <label for="ProductCatagory">Product Catgagory </label>
+            <input type="text" class="form-control" id="ProductCatgagory">
+            <div class="mt-3">
+                <button class="btn btn-primary" type="button" onclick="saveproduct()">Save</button>
+            </div>
+        </div>
+        <div class="w-75 m-auto">
+            <label for="ProductCatagory">Search</label>
+            <input type="text" onkeyup="productSearch(this.value)"  class="form-control" placeholder="Search" id="searchInput">
+        </div>
+        <div class="w-75 m-auto mt-5">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Product Price</th>
+                        <th scope="col">Product Catagory</th>
+                        <th scope="col">Delete Product</th>
+                        <th scope="col">Update Product</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tblc">
+              
+                      <tr>
+                   
+                      </tr>
+                      <tr>
+                    
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/co/main.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
