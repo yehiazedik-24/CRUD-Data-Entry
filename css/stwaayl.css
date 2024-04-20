@@ -4,3 +4,11 @@
     box-sizing: border-box;
   }
 
+
+
+
+  #deletAll{
+    margin: 20px 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  }

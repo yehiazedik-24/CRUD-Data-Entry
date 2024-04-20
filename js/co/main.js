@@ -48,6 +48,12 @@ function displayproduct(list = productList){
     counter++;
    }
    tabelBody.innerHTML = htmlContainer;
+   var btndel = document.getElementById('deletAll');
+   if (productList.length > 0) {
+      btndel.innerHTML =`<button onclick="deletAll()" class="btn btn-danger" >Delete All</button>`
+  }else {
+      btndel.innerHTML ="";
+  }
 }
 
 displayproduct()
@@ -71,7 +77,12 @@ function productSearch(searchKey) {
    }
    displayproduct(searchResult);
 }
-
+ // clear all data
+ function deletAll(){
+   localStorage.clear();
+   productList.splice(0);
+   displayproduct();
+}
 
 
 
